@@ -1,0 +1,4 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Error,Confirmed,1,,,,"Page 1 could not be processed: OCR confidence is too low (mean 17/100): the scan is too poor to read reliably, so no values were kept. Try a higher-resolution or cleaner scan..",Check this page in the PDF manually; its data is NOT in the workbook.,Open
+V002,Warning,Potential,1,,,,Page 1: best extraction scored 0.59 (< 0.60); rows may be incomplete or misaligned,Review this page.,Open
+V003,Warning,Potential,1,,,,Page 1: low-confidence OCR output was discarded rather than shown as data,Review this page.,Open

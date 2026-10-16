@@ -1,0 +1,6 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Warning,Potential,1,Extracted_Data,Row 8,Tax,Value 5425.38 in 'Tax' is far outside the typical range of this column (possible OCR or alignment error).,Verify against the source.,Open
+V002,Warning,Potential,1,Extracted_Data,Row 8,Amount,Value 35566.35 in 'Amount' is far outside the typical range of this column (possible OCR or alignment error).,Verify against the source.,Open
+V003,Warning,Potential,2,Extracted_Data,Row 19,Unit Price,'=. 388.36' could not be read as a number in numeric column 'Unit Price'.,"Check for OCR errors, misplaced text or an unusual number format.",Open
+V004,Info,Confirmed,1,Extracted_Data,,,T1: 1 repeated header row(s) were removed (the table continues across pages).,No action needed unless the table was not meant to continue.,Open
+V005,Info,Unverified,2,,,,Values on page 2 come from OCR (mean Tesseract word confidence 86/100) and have not been independently verified.,"Spot-check OCR-derived values against the source, especially numbers.",Open

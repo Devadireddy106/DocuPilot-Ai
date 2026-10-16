@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "DocuPilot: run app", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/app.py", "console": "integratedTerminal", "justMyCode": false },
+    { "name": "DocuPilot: run tests", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_tests.py", "console": "integratedTerminal" },
+    { "name": "DocuPilot: benchmark", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_benchmark.py", "console": "integratedTerminal" }
+  ]
+}

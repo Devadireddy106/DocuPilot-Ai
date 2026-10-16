@@ -1,0 +1,5 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Warning,Potential,1,Extracted_Data,Row 3,Reorder Level,Blank cell in column 'Reorder Level' (the column is filled in 95% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V002,Warning,Potential,1,Extracted_Data,Row 20,Reorder Level,Blank cell in column 'Reorder Level' (the column is filled in 95% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V003,Warning,Potential,2,Extracted_Data,Row 34,Reorder Level,Blank cell in column 'Reorder Level' (the column is filled in 95% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V004,Info,Confirmed,1,Extracted_Data,,,T1: 2 repeated header row(s) were removed (the table continues across pages).,No action needed unless the table was not meant to continue.,Open

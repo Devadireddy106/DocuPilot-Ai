@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local / secrets
+.env
+*.key
+secrets*
+
+# Generated at runtime (kept: folders via .gitkeep)
+outputs/*
+!outputs/.gitkeep
+reports/*
+!reports/.gitkeep
+!reports/benchmark_results.json
+!reports/benchmark_cases.csv
+!reports/benchmark_summary.md
+!reports/test_results.json
+!reports/test_results.txt
+.gradio/
+flagged/
+
+# Editors / OS
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+.DS_Store
+Thumbs.db

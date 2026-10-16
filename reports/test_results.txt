@@ -1,0 +1,7 @@
+DocuPilot AI test run - 2026-10-16 15:59:40
+Environment: {'python': '3.13.1', 'pymupdf': '1.28.2', 'pdfplumber': '0.11.10', 'openpyxl': '3.1.5', 'gradio': '6.30.0', 'tesseract': '5.4.0.20240606'}
+Total 152 | passed 150 | failed 2 | errors 0 | skipped 0 | 32.9s
+
+FAILED   tests.test_benchmark_regression::test_scanned_cases_reasonable_and_flagged[invoice_scanned]  assert False
+FAILED   tests.test_benchmark_regression::test_reproduces_reported_472_of_480_scan_result  assert 139 >= 465
+ +  where 139 = TableScore(expected_rows=40, got_rows=20, matched_rows=20, exact_rows=0, cells_total=480, cells_exact=139, numeric_total=200, numeric_exact=20, columns_total=12, columns_aligned=7, header_exact=False, dup_header_rows=0, extra_rows=0).cells_exact

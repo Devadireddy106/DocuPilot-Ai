@@ -1,0 +1,17 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Warning,Potential,1,Extracted_Data,Row 3,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V002,Warning,Potential,1,Extracted_Data,Row 8,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V003,Warning,Potential,1,Extracted_Data,Row 9,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V004,Warning,Potential,1,Extracted_Data,Row 10,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V005,Warning,Potential,1,Extracted_Data,Row 12,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V006,Warning,Potential,1,Extracted_Data,Row 16,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V007,Warning,Potential,1,Extracted_Data,Row 17,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V008,Warning,Potential,1,Extracted_Data,Row 18,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V009,Warning,Potential,2,Extracted_Data,Row 23,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V010,Warning,Potential,2,Extracted_Data,Row 26,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V011,Warning,Potential,2,Extracted_Data,Row 26,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V012,Warning,Potential,2,Extracted_Data,Row 29,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V013,Warning,Potential,2,Extracted_Data,Row 36,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V014,Warning,Potential,2,Extracted_Data,Row 40,Date,Blank cell in column 'Date' (the column is filled in 82% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V015,Warning,Potential,2,Extracted_Data,Row 41,Discount,Blank cell in column 'Discount' (the column is filled in 80% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V016,Info,Confirmed,1,Extracted_Data,,,T1: 1 repeated header row(s) were removed (the table continues across pages).,No action needed unless the table was not meant to continue.,Open

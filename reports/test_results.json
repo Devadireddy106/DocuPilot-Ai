@@ -1,0 +1,934 @@
+{
+  "date": "2026-10-16 15:59:40",
+  "elapsed_seconds": 32.9,
+  "exit_code": 1,
+  "counts": {
+    "passed": 150,
+    "failed": 2,
+    "skipped": 0,
+    "error": 0
+  },
+  "total": 152,
+  "versions": {
+    "python": "3.13.1",
+    "pymupdf": "1.28.2",
+    "pdfplumber": "0.11.10",
+    "openpyxl": "3.1.5",
+    "gradio": "6.30.0",
+    "tesseract": "5.4.0.20240606"
+  },
+  "tests": [
+    {
+      "test": "tests.test_benchmark_regression::test_metric_perfect_match",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_metric_detects_dropped_rows_and_spurious_rows",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_metric_detects_column_shift",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_metric_counts_leaked_duplicate_headers_and_numeric_accuracy",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_metric_missing_table_scores_zero",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_labelled_validation_detection_is_computed_not_hardcoded",
+      "status": "passed",
+      "seconds": 0.021,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_ground_truth_literals_are_internally_consistent",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[invoice_ruled]",
+      "status": "passed",
+      "seconds": 0.438,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[inventory_ruled]",
+      "status": "passed",
+      "seconds": 0.384,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[bank_ruled]",
+      "status": "passed",
+      "seconds": 0.321,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[invoice_unruled]",
+      "status": "passed",
+      "seconds": 0.188,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[bank_unruled]",
+      "status": "passed",
+      "seconds": 0.141,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[sparse_unruled]",
+      "status": "passed",
+      "seconds": 0.191,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[wide_16col]",
+      "status": "passed",
+      "seconds": 0.27,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[wrapped_ruled]",
+      "status": "passed",
+      "seconds": 0.094,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_digital_cases_exact[purchase_order]",
+      "status": "passed",
+      "seconds": 0.06,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_title_above_unruled_table_is_peeled_not_absorbed",
+      "status": "passed",
+      "seconds": 0.147,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_total_row_in_source_is_kept_and_consistent",
+      "status": "passed",
+      "seconds": 0.067,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_known_weak_wrapped_unruled_is_flagged_not_silent",
+      "status": "passed",
+      "seconds": 0.082,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_prose_is_never_turned_into_a_table",
+      "status": "passed",
+      "seconds": 0.202,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_scanned_cases_reasonable_and_flagged[invoice_scanned]",
+      "status": "failed",
+      "seconds": 3.95,
+      "detail": "assert False"
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_scanned_cases_reasonable_and_flagged[bank_scanned_skewed]",
+      "status": "passed",
+      "seconds": 2.808,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_scanned_cases_reasonable_and_flagged[mixed_digital_scanned]",
+      "status": "passed",
+      "seconds": 1.51,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_reproduces_reported_472_of_480_scan_result",
+      "status": "failed",
+      "seconds": 3.859,
+      "detail": "assert 139 >= 465\n +  where 139 = TableScore(expected_rows=40, got_rows=20, matched_rows=20, exact_rows=0, cells_total=480, cells_exact=139, numeric_total=200, numeric_exact=20, columns_total=12, columns_aligned=7, header_exact=False, dup_header_rows=0, extra_rows=0).cells_exact"
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_unreadable_scan_is_reported_as_failure_not_garbage",
+      "status": "passed",
+      "seconds": 4.611,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_benchmark_regression::test_low_quality_pages_make_status_review_needed",
+      "status": "passed",
+      "seconds": 0.454,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_one_failing_page_does_not_stop_the_document",
+      "status": "passed",
+      "seconds": 0.123,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_strategy_error_triggers_fallback_strategy",
+      "status": "passed",
+      "seconds": 0.052,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_time_budget_exhaustion_marks_remaining_pages_failed",
+      "status": "passed",
+      "seconds": 0.006,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_progress_callback_errors_never_break_processing",
+      "status": "passed",
+      "seconds": 0.088,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_progress_is_monotonic_and_ends_at_one",
+      "status": "passed",
+      "seconds": 0.152,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_bad_inputs_get_friendly_messages[make_corrupt_pdf-PDF]",
+      "status": "passed",
+      "seconds": 0.012,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_bad_inputs_get_friendly_messages[make_not_pdf-PDF]",
+      "status": "passed",
+      "seconds": 0.009,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_encrypted_and_oversized_inputs_via_pipeline",
+      "status": "passed",
+      "seconds": 0.145,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_empty_extraction_returns_valid_workbook_and_says_so",
+      "status": "passed",
+      "seconds": 0.27,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_temp_workspace_cleaned_after_success_and_failure",
+      "status": "passed",
+      "seconds": 0.19,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_workspace_removed_even_if_body_raises",
+      "status": "passed",
+      "seconds": 0.003,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_repeated_runs_are_deterministic_and_independent",
+      "status": "passed",
+      "seconds": 1.13,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_processing_log_json_is_valid_and_private",
+      "status": "passed",
+      "seconds": 0.288,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_validation_csv_is_formula_safe_and_has_bom",
+      "status": "passed",
+      "seconds": 0.229,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_old_outputs_purged_but_foreign_files_kept",
+      "status": "passed",
+      "seconds": 0.008,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_error_recovery::test_sanitize_filename",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_workbook_has_required_sheets_and_is_valid",
+      "status": "passed",
+      "seconds": 0.109,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_extracted_data_formatting_types_and_flags",
+      "status": "passed",
+      "seconds": 0.066,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_formula_injection_is_neutralised",
+      "status": "passed",
+      "seconds": 0.086,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_filename_in_summary_is_sanitised_and_output_name_safe",
+      "status": "passed",
+      "seconds": 0.083,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_illegal_characters_and_long_text_are_handled",
+      "status": "passed",
+      "seconds": 0.108,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_multiple_tables_get_unique_valid_sheet_names",
+      "status": "passed",
+      "seconds": 0.142,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_no_tables_still_produces_valid_workbook_with_message",
+      "status": "passed",
+      "seconds": 0.084,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_partial_result_is_marked_partial_everywhere",
+      "status": "passed",
+      "seconds": 0.09,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_validation_report_columns_and_summary_fields",
+      "status": "passed",
+      "seconds": 0.084,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_flagged_rows_reference_issue_ids",
+      "status": "passed",
+      "seconds": 0.082,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_verify_workbook_detects_problems",
+      "status": "passed",
+      "seconds": 0.065,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_export_never_overwrites_and_leaves_no_temp_files",
+      "status": "passed",
+      "seconds": 0.112,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_excel_export::test_put_text_returns_text_cell_for_equals_sign",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_digital_ruled_table_exact",
+      "status": "passed",
+      "seconds": 0.275,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_unruled_table_uses_geometry_and_is_exact",
+      "status": "passed",
+      "seconds": 0.19,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_multipage_table_headerless_continuation",
+      "status": "passed",
+      "seconds": 0.234,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_repeated_headers_removed",
+      "status": "passed",
+      "seconds": 0.218,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_prose_page_yields_no_tables_honestly",
+      "status": "passed",
+      "seconds": 0.242,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_blank_page_marked_blank",
+      "status": "passed",
+      "seconds": 0.023,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_missing_values_preserved_as_blank",
+      "status": "passed",
+      "seconds": 0.09,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_leading_zero_identifiers_not_converted",
+      "status": "passed",
+      "seconds": 0.045,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_multiple_independent_tables",
+      "status": "passed",
+      "seconds": 0.047,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_classify_page_rules",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_classify_document",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_plans_are_per_kind_and_bounded",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_score_is_heuristic_in_unit_range_and_penalises_sparse_tables",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_attempts_are_bounded",
+      "status": "passed",
+      "seconds": 0.212,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_decision_log_and_provenance_recorded",
+      "status": "passed",
+      "seconds": 0.21,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_scanned_pdf_ocr",
+      "status": "passed",
+      "seconds": 1.379,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_mixed_document_digital_plus_scanned",
+      "status": "passed",
+      "seconds": 1.451,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_missing_tesseract_is_reported_not_silent",
+      "status": "passed",
+      "seconds": 0.182,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_ocr_engine_reports_install_help_when_missing",
+      "status": "passed",
+      "seconds": 0.003,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_preprocess_variants_return_images",
+      "status": "passed",
+      "seconds": 0.009,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_extraction::test_rule_removal_erases_borders_but_keeps_text_like_blobs",
+      "status": "passed",
+      "seconds": 0.14,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_valid_pdf_passes",
+      "status": "passed",
+      "seconds": 0.003,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_corrupt_pdf_rejected",
+      "status": "passed",
+      "seconds": 0.006,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_non_pdf_signature_rejected",
+      "status": "passed",
+      "seconds": 0.003,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_empty_file_rejected",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_missing_file_rejected",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_encrypted_pdf_rejected",
+      "status": "passed",
+      "seconds": 0.059,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_more_than_50_pages_rejected",
+      "status": "passed",
+      "seconds": 0.078,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_exactly_50_pages_accepted",
+      "status": "passed",
+      "seconds": 0.063,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_page_limit_can_be_lowered_but_never_raised",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_pdf_preflight::test_file_size_limit",
+      "status": "passed",
+      "seconds": 0.003,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_repeated_header_across_pages_merges_and_drops_duplicate_header",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_headerless_continuation_merges_only_with_position_and_type_evidence",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_headerless_next_page_not_merged_without_position_evidence",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_headerless_not_merged_when_value_types_differ",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_different_schema_kept_separate",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_similar_but_not_identical_header_is_flagged_not_merged",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_non_consecutive_pages_never_merge",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_page_numbers_and_running_footers_removed",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_inconsistent_row_lengths_are_padded_and_flagged",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_long_row_widens_table_without_losing_data",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_missing_headers_get_neutral_names_only",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_blank_header_cell_and_duplicates_named_neutrally",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_blank_cells_and_whitespace_normalised_not_dropped",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_leading_zeros_kept_in_reconstruction",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_two_tables_same_page_stay_separate",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_repeated_header_inside_body_removed",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_table_reconstruction::test_helpers",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[1234-1234.0]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[1,234.50-1234.5]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[12,34,567.89-1234567.89]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[1,234,567-1234567.0]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[(500)--500.0]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[-12.5--12.5]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[12.5%-0.125]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[\\u20b91,200-1200.0]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[Rs. 99-99.0]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[100---100.0]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_ok[0.5-0.5]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[abc]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[007]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[1,23]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[1.234,56]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[12/05/2026]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[1e5x]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[--5]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[12 34]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_parse_number_refuses_to_guess[NaN]",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_date_parsing_unambiguous_and_ambiguous",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_invalid_date_is_confirmed_error",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_ambiguous_dates_flagged_potential_and_left_as_text",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_day_first_inferred_when_a_value_exceeds_12",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_conflicting_date_orders_flagged",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_duplicate_records_flagged_as_potential",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_missing_value_flagged_when_column_mostly_filled",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_numeric_parse_failure_flagged",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_suspicious_outlier_flagged",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_column_misalignment_text_in_numeric_column",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_total_mismatch_flagged_but_correct_total_is_not",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_subtotals_and_grand_total_accepted",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_empty_table_and_empty_column",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_repeated_header_row_detected_if_it_survives",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_ragged_row_notes_become_issues",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_low_ocr_confidence_only_for_ocr_rows",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_failed_page_is_a_confirmed_error",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_ocr_pages_are_listed_as_unverified",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_time_budget_abort_is_reported",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_issue_ids_unique_and_sorted_by_severity",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_issue_cap_prevents_flooding",
+      "status": "passed",
+      "seconds": 0.009,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_validator_never_modifies_values",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_ocr_corrections_are_recorded_with_original_rule_and_reason",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_corrections_not_applied_to_digital_cells_or_text_columns_or_genuine_values",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_ambiguous_ocr_values_are_left_for_review_not_guessed",
+      "status": "passed",
+      "seconds": 0.001,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_header_normalisation_notes",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_id_like_and_long_digit_columns_stay_text",
+      "status": "passed",
+      "seconds": 0.0,
+      "detail": ""
+    },
+    {
+      "test": "tests.test_validation::test_removed_content_is_reported_as_info_for_auditability",
+      "status": "passed",
+      "seconds": 0.002,
+      "detail": ""
+    }
+  ]
+}

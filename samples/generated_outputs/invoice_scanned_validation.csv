@@ -1,0 +1,10 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Warning,Potential,1,Extracted_Data,Row 9,Date,'§ 2026-12-23' does not look like a date in date column 'Date'.,Check the source.,Open
+V002,Warning,Potential,1,Extracted_Data,Row 19,Unit Price,'=. 388.36' could not be read as a number in numeric column 'Unit Price'.,"Check for OCR errors, misplaced text or an unusual number format.",Open
+V003,Warning,Potential,2,Extracted_Data,Row 29,Amount,Value 200569 in 'Amount' is far outside the typical range of this column (possible OCR or alignment error).,Verify against the source.,Open
+V004,Info,Unverified,1,,,,Values on page 1 come from OCR (mean Tesseract word confidence 82/100) and have not been independently verified.,"Spot-check OCR-derived values against the source, especially numbers.",Open
+V005,Info,Confirmed,1,Extracted_Data,,,T1: 1 repeated header row(s) were removed (the table continues across pages).,No action needed unless the table was not meant to continue.,Open
+V006,Info,Confirmed,1,,,Unit Price,Automatically corrected '=100.24' -> '100.24' (ocr_border_artifact). OCR text in a numeric column: a stray border character was stuck to the number. The repaired text parses as a number.,Compare with the source page if the value is critical.,Auto-corrected
+V007,Info,Confirmed,1,,,Qty,Automatically corrected '37)' -> '37' (ocr_border_artifact). OCR text in a numeric column: a stray border character was stuck to the number. The repaired text parses as a number.,Compare with the source page if the value is critical.,Auto-corrected
+V008,Info,Unverified,2,,,,Values on page 2 come from OCR (mean Tesseract word confidence 85/100) and have not been independently verified.,"Spot-check OCR-derived values against the source, especially numbers.",Open
+V009,Info,Confirmed,2,,,Unit Price,Automatically corrected '=710.03' -> '710.03' (ocr_border_artifact). OCR text in a numeric column: a stray border character was stuck to the number. The repaired text parses as a number.,Compare with the source page if the value is critical.,Auto-corrected

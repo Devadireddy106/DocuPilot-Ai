@@ -1,0 +1,5 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Warning,Potential,1,Extracted_Data,Row 2,Ref No,Blank cell in column 'Ref No' (the column is filled in 97% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V002,Warning,Potential,1,Extracted_Data,Row 4,Credit,"Value 45,000.00 in 'Credit' is far outside the typical range of this column (possible OCR or alignment error).",Verify against the source.,Open
+V003,Warning,Potential,1,Extracted_Data,Row 4,Balance,"Value 93,750.00 in 'Balance' is far outside the typical range of this column (possible OCR or alignment error).",Verify against the source.,Open
+V004,Warning,Potential,2,Extracted_Data,Row 61,Ref No,Blank cell in column 'Ref No' (the column is filled in 97% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open

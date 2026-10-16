@@ -1,0 +1,2 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Info,Confirmed,1,Extracted_Data,,,T1: 1 repeated header row(s) were removed (the table continues across pages).,No action needed unless the table was not meant to continue.,Open

@@ -1,0 +1,7 @@
+﻿Issue ID,Severity,Category,Page,Sheet,Row Reference,Column Name,Issue Description,Suggested Action,Resolution Status
+V001,Warning,Potential,1,Extracted_Data,Row 2,Ref No,Blank cell in column 'Ref No' (the column is filled in 93% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V002,Warning,Potential,1,Extracted_Data,Row 4,Credit,"Value 45,000.00 in 'Credit' is far outside the typical range of this column (possible OCR or alignment error).",Verify against the source.,Open
+V003,Warning,Potential,1,Extracted_Data,Row 18,Date,'16/05/2026‘' does not look like a date in date column 'Date'.,Check the source.,Open
+V004,Warning,Potential,1,Extracted_Data,Row 22,Date,'13/05/2026‘' does not look like a date in date column 'Date'.,Check the source.,Open
+V005,Warning,Potential,1,Extracted_Data,Row 31,Ref No,Blank cell in column 'Ref No' (the column is filled in 93% of rows).,Check the source: the value may be genuinely blank or it may have been missed.,Open
+V006,Info,Unverified,1,,,,Values on page 1 come from OCR (mean Tesseract word confidence 87/100) and have not been independently verified.,"Spot-check OCR-derived values against the source, especially numbers.",Open

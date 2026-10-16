@@ -1,0 +1,4 @@
+-r requirements.txt
+# Needed only to run the tests / benchmark (fixtures are generated with reportlab).
+pytest>=8.0
+reportlab>=4.0

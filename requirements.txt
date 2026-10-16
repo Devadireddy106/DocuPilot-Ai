@@ -1,0 +1,17 @@
+# DocuPilot AI - runtime dependencies (all free / open source; CPU only; no API keys).
+# Tested with Python 3.13 on Linux. Intended for Python 3.11 / 3.12 / 3.13 on Windows.
+# The *Tesseract OCR executable* is NOT a pip package - see README (Windows installer).
+#
+# Version ranges are lower-bounded by the versions this project was developed and tested with.
+# Upper bounds prevent surprise major-version breaks (Gradio's API changes between majors).
+
+gradio>=5.0,<7
+pymupdf>=1.24,<2
+pdfplumber>=0.11,<0.12
+pytesseract>=0.3.10,<0.4
+Pillow>=10.0
+numpy>=1.26
+pandas>=2.1
+openpyxl>=3.1,<4
+# Optional but recommended: faster image clean-up. The code falls back to a NumPy implementation without it.
+opencv-python-headless>=4.9
